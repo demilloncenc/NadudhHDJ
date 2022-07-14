@@ -1,7 +1,8 @@
-version: '2'
+version: '1'
 
 services:
   sherlock:
     build: .
+    - "./results:/opt/sherlock/results"
     volumes:
       - "./results:/opt/sherlock/results"
